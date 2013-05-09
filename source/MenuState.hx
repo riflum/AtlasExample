@@ -31,6 +31,7 @@ class MenuState extends FlxState
 		x1.loadImageFromTexture(tex1, true, false, "100px-1,202,0,200-Scythescraper.png");
 		x1.facing = FlxObject.LEFT;
 		x1.resetSizeFromFrame();
+		x1.setOriginToCenter();
 		add(x1);
 		
 		// You can load rotated image from atlas. It is very useful for flash target where drawing rotated graphics is very expensive
@@ -42,7 +43,9 @@ class MenuState extends FlxState
 		var x3:FlxSprite = new FlxSprite(200, 20);
 		x3.loadImageFromTexture(tex3, true);
 		x3.frameName = "super_element_50px_0.png";
-		x3.resetSizeFromFrame();	
+		x3.resetSizeFromFrame();
+		x3.setOriginToCenter();
+		x3.facing = FlxObject.LEFT;
 		add(x3);
 		
 		// Animation samples:
